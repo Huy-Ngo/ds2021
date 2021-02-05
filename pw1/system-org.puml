@@ -1,0 +1,6 @@
+@startuml
+node Client as cli
+node Server as srv
+
+cli -- srv : TCP/IP
+@enduml
