@@ -1,0 +1,6 @@
+grpcio==1.35.0
+grpcio-tools==1.35.0
+mrjob==0.7.4
+protobuf==3.14.0
+PyYAML==5.4.1
+six==1.15.0
