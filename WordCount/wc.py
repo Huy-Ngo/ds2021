@@ -10,9 +10,6 @@ class WordCount(MRJob):
         for word in word_regex.findall(line):
             yield (word.lower(), 1)
 
-    def combiner(self, word, counts):
-        yield (word, sum(counts))
-
     def reducer(self, word, counts):
         yield (word, sum(counts))
 
