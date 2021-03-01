@@ -1,6 +1,15 @@
 @startuml
-node Client as cli
-node Server as srv
+node Client as cli {
+	component sender
+	file "File" as f1
+}
+node Server as srv {
+	component receiver
+	file "File" as f2
+}
 
-cli -- srv : TCP/IP
+sender <. f1 : Read
+receiver .> f2 : Write
+
+sender -- receiver : TCP/IP
 @enduml
