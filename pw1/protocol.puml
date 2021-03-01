@@ -3,7 +3,7 @@ hide footbox
 skinparam sequenceParticipant underline
 client -> server : connect()
 client <-- server : accept()
-client -> server : send(filesize)
+client -> server : send(metadata)
 client -> server : send(chunk_1)
 client <-- server : ack()
 client -> server : send(chunk_2)
