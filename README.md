@@ -16,5 +16,6 @@ Group Info
 * Ngô Xuân Minh (BI9-167)
 * Nguyễn Gia Phong (BI9-184)
 
-Group topic: HTTP over MPI
+Group project topic: [HTTP over MPI][project]
 
+[project]: https://github.com/Huy-Ngo/http-over-mpi/
