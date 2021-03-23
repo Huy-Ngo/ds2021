@@ -1,0 +1,15 @@
+@startuml
+node {
+	component sender
+	file "File" as f1
+}
+node {
+	component receiver
+	file "File" as f2
+}
+
+sender <. f1 : Read
+receiver .> f2 : Write
+
+sender -- receiver : MPI
+@enduml
